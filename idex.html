@@ -12,17 +12,26 @@
     <h1>Meme Certificate Generator</h1>
     <input type="text" id="individual" name="individual" placeholder="First and Last name" required
     minlength="4" maxlength="50" size="70" />
-    <section>
+    <section class="checks">
         <h1>Individual is certified in:</h1>
         <input type="checkbox" id="monkey" name="monkey" value="intelligence"/>
         <label for="monkey">Monkey</label>
         <br>
         <input type="checkbox" id="roblox" name="roblox" value="peak_gaming"/>
-        <label for="monkey">Roblox</label>
+        <label for="roblox">Roblox</label>
         <br>
-        <input type="checkbox" id="monkey" name="monkey" value="vision"/>
-        <label for="monkey">Monkey</label>
+        <input type="checkbox" id="pixelate" name="pixelate" value="vision"/>
+        <label for="pixelate">Pixelate</label>
         <br>
     </section>
+    <section class="signer">
+        <h1></h1>
+        <input type="text" id="first_signer" name="first_signer" placeholder="First and Last name" required
+        minlength="4" maxlength="50" size="70" />
+        <h1>and</h1>
+        <input type="text" id="second_signer" name="second_signer" placeholder="First and Last name" required
+        minlength="4" maxlength="50" size="70" />
+    </section>
+    <input type="button" id="generate" name="generate" value="Generate" onclick=""/>
 </body>
 </html>
