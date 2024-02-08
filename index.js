@@ -10,3 +10,5 @@ function generate(){
         infoElement.innerText = e.target.value;
       });
 }
+// get id/class from input box, then paste it into dif class of blank
+// can do onlick with checkboxes, so make another function replacing img and icon
