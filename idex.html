@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme Generator</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
+
 <body>
-    <div id="left"></div>
-    <div id="right"></div>
-    <h1>Meme Certificate Generator</h1>
-    <input type="text" id="individual" name="individual" placeholder="First and Last name" required
-    minlength="4" maxlength="50" size="70" />
-    <h1>Individual is certified in:</h1>
-    <section class="checks">
-        <input type="checkbox" id="monkey" name="monkey" value="intelligence"/>
-        <label for="monkey">Monkey</label>
-        <br>
-        <input type="checkbox" id="roblox" name="roblox" value="peak_gaming"/>
-        <label for="roblox">Roblox</label>
-        <br>
-        <input type="checkbox" id="pixelate" name="pixelate" value="vision"/>
-        <label for="pixelate">Pixelate</label>
-        <br>
-    </section>
-    <!-- <section class="signer"> -->
+    <section class="top">
+        <h1>Meme Certificate Generator</h1>
+        <input type="text" id="individual" name="individual" placeholder="First and Last name" required minlength="4"
+            maxlength="50" size="70" />
+        <h1>Individual is certified in:</h1>
+        <section class="checks">
+            <input type="checkbox" id="monkey" name="monkey" value="intelligence" />
+            <label for="monkey">Monkey</label>
+            <br>
+            <input type="checkbox" id="roblox" name="roblox" value="peak_gaming" />
+            <label for="roblox">Roblox</label>
+            <br>
+            <input type="checkbox" id="pixelate" name="pixelate" value="vision" />
+            <label for="pixelate">Pixelate</label>
+            <br>
+        </section>
+        <!-- <section class="signer"> -->
         <h1>Certificate issued by:</h1>
         <input type="text" id="first_signer" name="first_signer" placeholder="First and Last name" required
-        minlength="4" maxlength="50" size="70" />
+            minlength="4" maxlength="50" size="70" />
         <h1>and</h1>
         <input type="text" id="second_signer" name="second_signer" placeholder="First and Last name" required
-        minlength="4" maxlength="50" size="70" />
-    <!-- </section> -->
-    <input type="button" id="generate" name="generate" value="Generate" onclick=""/>
+            minlength="4" maxlength="50" size="70" />
+        <!-- </section> -->
+        <input type="submit" id="generate" name="generate" value="Generate" onclick="generate()" />
+        <!-- </section> -->
+        <section class="certificate">
+            <section class="picture">
+            </section>
+            <section class="together">
+                <section class="title">
+                    <img src="brain-svgrepo-com.svg" alt="icon" width="100">
+                    <h1>Certificate of "Blank"</h1>
+                    <p>This is presented to</p>
+                    <h1>"Name"</h1>
+                    <p>"changes"</p>
+                </section>
+                <section class="signers">
+                    <section id="left">
+                        <img src="signature.png" alt="signature" width="150">
+                        <div class="line"></div>
+                        <h1>"Name"</h1>
+                        <p>Head of Community</p>
+                    </section>
+                    <section id="right">
+                        <img src="signature_1.png" alt="signature" width="100">
+                        <div class="line"></div>
+                        <h1>"Name"</h1>
+                        <p>President & CEO</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
 </body>
+
 </html>

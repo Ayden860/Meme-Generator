@@ -1,4 +1,4 @@
-body{
+.top{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -9,4 +9,93 @@ body{
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 2%;
+    margin-bottom: 2%;
+}
+.certificate{
+    width: 55%;
+    height: 700px;
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    flex-wrap: nowrap;
+}
+.picture{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 25%;
+    height: 100%;
+    border: 1px black solid;
+    justify-content: flex-start;
+    background: url(Pixels-Beach.jpeg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center bottom;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    border: 1px black solid;
+    align-items: center; 
+    /* was align-item:flex-start; */
+    justify-content: center;
+    background-color: #282828;
+    margin: 0%;
+}
+.title>h1{
+    color: #FFCF23;
+    font-size:x-large;
+    margin: 1%;
+}
+.title>p{
+    color: #ffffff;
+}
+.signers{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 39.75%;
+    border: 1px black solid;
+    align-items: flex-end;
+    background-color: #FFCF23;
+}
+#left{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0%;
+}
+#left>h1{
+    font-size:larger;
+    margin: 20px;
+}
+#right{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0%;
+}
+#right>h1{
+    font-size:larger;
+    margin: 20px;
+}
+.line{
+    width: 200px;
+    border: 1px black solid;
+    height: 0px;
+}
+.together{
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
 }
