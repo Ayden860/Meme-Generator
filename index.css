@@ -4,12 +4,19 @@
     flex-direction: column;
     align-items: center;
 }
-#generate{
+#generate, 
+#print{
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+.wraper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .certificate{
     width: 55%;
@@ -27,12 +34,16 @@
     height: 100%;
     border: 1px black solid;
     justify-content: flex-start;
-    background: url(Pixels-Beach.jpeg);
+    /* background: url(Pixels-Beach.jpeg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center bottom; */
+}
+#nothing{
+    width: 100%;
+    height: 100%;
 }
 .title{
     display: flex;
@@ -98,4 +109,10 @@
     display: flex;
     width: 75%;
     flex-wrap: wrap;
+}
+
+@media print {
+    .top{
+        display: none;
+    }
 }

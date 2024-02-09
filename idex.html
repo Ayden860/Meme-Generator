@@ -17,13 +17,13 @@
             maxlength="50" size="70" />
         <h1>Individual is certified in:</h1>
         <section class="checks">
-            <input type="checkbox" id="monkey" name="monkey" value="intelligence" />
+            <input type="checkbox" id="monkey" name="monkey" value="intelligence" onclick="changer_1()"/>
             <label for="monkey">Monkey</label>
             <br>
-            <input type="checkbox" id="roblox" name="roblox" value="peak_gaming" />
+            <input type="checkbox" id="roblox" name="roblox" value="peak_gaming" onclick="changer_2()"/>
             <label for="roblox">Roblox</label>
             <br>
-            <input type="checkbox" id="pixelate" name="pixelate" value="vision" />
+            <input type="checkbox" id="pixelate" name="pixelate" value="vision" onclick="changer_3()"/>
             <label for="pixelate">Pixelate</label>
             <br>
         </section>
@@ -36,34 +36,39 @@
             minlength="4" maxlength="50" size="70" />
         <!-- </section> -->
         <input type="submit" id="generate" name="generate" value="Generate" onclick="generate()" />
-        <!-- </section> -->
+        </section>
+        <section class="wraper">
         <section class="certificate">
             <section class="picture">
+                <img id="nothing" src="" alt="picture">
             </section>
             <section class="together">
                 <section class="title">
-                    <img src="brain-svgrepo-com.svg" alt="icon" width="100">
-                    <h1>Certificate of "Blank"</h1>
+                    <img id="nothing_icon" src="" alt="icon" width="100">
+                    <h1 id="certificate_name">Certificate of "Blank"</h1>
                     <p>This is presented to</p>
-                    <h1>"Name"</h1>
+                    <h1 id="individual_1">"Name"</h1>
                     <p>"changes"</p>
                 </section>
                 <section class="signers">
                     <section id="left">
                         <img src="signature.png" alt="signature" width="150">
                         <div class="line"></div>
-                        <h1>"Name"</h1>
+                        <h1 id="signer_1">"Name"</h1>
                         <p>Head of Community</p>
                     </section>
                     <section id="right">
                         <img src="signature_1.png" alt="signature" width="100">
                         <div class="line"></div>
-                        <h1>"Name"</h1>
+                        <h1 id="signer_2">"Name"</h1>
                         <p>President & CEO</p>
                     </section>
                 </section>
             </section>
         </section>
+        </section>
+    <section class="top">
+        <input type="button" class="buttons_2" id="print" name="print" value="Print" onclick="window.print()">
     </section>
 </body>
 
